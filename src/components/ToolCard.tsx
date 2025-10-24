@@ -23,13 +23,20 @@ export const ToolCard = ({
   rating,
 }: ToolCardProps) => {
   return (
-    <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] relative">
+    <Card 
+      className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] relative"
+      itemScope 
+      itemType="https://schema.org/SoftwareApplication"
+    >
       <Badge className={`absolute top-4 right-4 ${categoryColor}`}>
         {category}
       </Badge>
       <CardHeader>
-        <CardTitle className="text-xl mb-2">{title}</CardTitle>
-        <div className="flex items-center gap-1 mb-2">
+        <CardTitle className="text-xl mb-2" itemProp="name">{title}</CardTitle>
+        <div className="flex items-center gap-1 mb-2" itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+          <meta itemProp="ratingValue" content={rating.toString()} />
+          <meta itemProp="bestRating" content="5" />
+          <meta itemProp="worstRating" content="1" />
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
@@ -38,6 +45,7 @@ export const ToolCard = ({
                   ? "fill-yellow-400 text-yellow-400"
                   : "text-muted-foreground/30"
               }`}
+              aria-hidden="true"
             />
           ))}
           <span className="text-sm text-muted-foreground ml-2">
@@ -46,13 +54,14 @@ export const ToolCard = ({
         </div>
       </CardHeader>
       <CardContent>
-        <CardDescription className="mb-6">{description}</CardDescription>
+        <CardDescription className="mb-6" itemProp="description">{description}</CardDescription>
         <Button asChild className="w-full" size="lg">
           <a
             href={ctaLink}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer sponsored"
             itemProp="url"
+            aria-label={`Visit ${title} - ${ctaText}`}
           >
             {ctaText}
           </a>

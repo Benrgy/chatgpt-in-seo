@@ -185,13 +185,18 @@ const Index = () => {
       <section
         id="hero"
         className="min-h-[60vh] flex items-center justify-center relative pt-20"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        aria-label="Hero section showcasing AI-powered SEO tools"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"></div>
+        <div className="absolute inset-0">
+          <img 
+            src={heroImage}
+            alt="Modern office workspace featuring AI-powered SEO tools dashboard with ChatGPT integration for search engine optimization and digital marketing professionals"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"></div>
+        </div>
         <div className="container mx-auto px-6 text-center relative z-10 py-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
             ChatGpt in SEO: Smart Chatgpt Seo Tools for Fast Ranking
@@ -227,23 +232,23 @@ const Index = () => {
       </div>
 
       {/* Trust Bar */}
-      <section className="py-12 bg-muted/50">
+      <section className="py-12 bg-muted/50" aria-label="Trust and statistics">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center items-center gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary">1000+</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Over one thousand users">1000+</div>
               <div className="text-muted-foreground">Happy Users</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">6</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Six premium tools">6</div>
               <div className="text-muted-foreground">Premium Tools</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">24/7</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Twenty-four seven support">24/7</div>
               <div className="text-muted-foreground">Support Available</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">Founded 2024</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Founded in 2024">Founded 2024</div>
               <div className="text-muted-foreground">Trusted Directory</div>
             </div>
           </div>
@@ -499,18 +504,22 @@ const Index = () => {
               <p className="text-gray-400 mb-4">
                 Stay updated with our latest tools and features
               </p>
-              <form onSubmit={handleNewsletterSubmit} className="flex">
+              <form onSubmit={handleNewsletterSubmit} className="flex" aria-label="Newsletter subscription form">
+                <label htmlFor="footer-newsletter-email" className="sr-only">Email address for newsletter</label>
                 <input
+                  id="footer-newsletter-email"
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  aria-required="true"
                   className="px-4 py-2 rounded-l-full w-full text-gray-900"
                 />
                 <Button
                   type="submit"
                   className="px-6 rounded-r-full bg-primary hover:bg-primary/90"
+                  aria-label="Subscribe to newsletter"
                 >
                   Subscribe
                 </Button>
