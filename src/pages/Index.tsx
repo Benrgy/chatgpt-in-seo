@@ -13,7 +13,7 @@ const tools = [
     description:
       "Master ChatGPT in SEO. Learn, apply & rank fast. See how ChatGPT will truly affect your SEO results",
     category: "SEO Tools",
-    categoryColor: "bg-blue-100 text-blue-600",
+    categoryColor: "primary",
     ctaText: "Try Toolkit",
     ctaLink: "https://f8ccf5qat3ax2l151jl9445v0h.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
@@ -23,7 +23,7 @@ const tools = [
     description:
       "Explore AI video tools for smart editing. Automate production, save time, and elevate your content.",
     category: "Video Tools",
-    categoryColor: "bg-purple-100 text-purple-600",
+    categoryColor: "secondary",
     ctaText: "Explore Video Tools",
     ctaLink: "https://a42b49kcsdbw6s14uru2cs6zbw.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
@@ -33,7 +33,7 @@ const tools = [
     description:
       "Discover AI tools that automate marketing tasks, double ROI, and cut ad costs effortlessly.",
     category: "Automation",
-    categoryColor: "bg-green-100 text-green-600",
+    categoryColor: "accent",
     ctaText: "Automate Marketing",
     ctaLink: "https://25a5cxnmya8y7r9mu9xpv65zfc.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
@@ -43,7 +43,7 @@ const tools = [
     description:
       "Discover top AI tools for video creation. Enhance content, save time, boost engagement effortlessly.",
     category: "Video Creation",
-    categoryColor: "bg-red-100 text-red-600",
+    categoryColor: "primary",
     ctaText: "Top Video Tools",
     ctaLink: "https://3f1da1rk327l9x9b3f1x2r5z6r.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 4,
@@ -53,7 +53,7 @@ const tools = [
     description:
       "Turn blogs into passive income machines with AI. Boost traffic, automate profits, start today.",
     category: "Monetization",
-    categoryColor: "bg-yellow-100 text-yellow-600",
+    categoryColor: "secondary",
     ctaText: "Monetise Blog",
     ctaLink: "https://ba4d0zukz36k2wagyd-24s3tcw.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
@@ -63,7 +63,7 @@ const tools = [
     description:
       "Discover AI tools that automate marketing tasks, double ROI, and cut ad costs effortlessly.",
     category: "Marketing",
-    categoryColor: "bg-indigo-100 text-indigo-600",
+    categoryColor: "accent",
     ctaText: "AI Marketing",
     ctaLink: "https://1fcad9hj31dm9xej16rfvd1pdu.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,

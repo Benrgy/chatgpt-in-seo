@@ -22,13 +22,17 @@ export const ToolCard = ({
   ctaLink,
   rating,
 }: ToolCardProps) => {
+  const badgeVariant = categoryColor === "primary" ? "default" : 
+                       categoryColor === "secondary" ? "secondary" : 
+                       "outline";
+  
   return (
     <Card 
       className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] relative"
       itemScope 
       itemType="https://schema.org/SoftwareApplication"
     >
-      <Badge className={`absolute top-4 right-4 ${categoryColor}`}>
+      <Badge variant={badgeVariant} className="absolute top-4 right-4">
         {category}
       </Badge>
       <CardHeader>
