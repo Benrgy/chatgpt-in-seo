@@ -5,7 +5,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ToolCard } from "@/components/ToolCard";
 import { FAQSection } from "@/components/FAQSection";
 import { EducationalSection } from "@/components/EducationalSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import heroImage from "@/assets/hero-seo-ai.jpg";
 
 const tools = [
@@ -368,9 +367,6 @@ const Index = () => {
 
       {/* Educational Section */}
       <EducationalSection />
-
-      {/* Testimonials */}
-      <TestimonialsSection />
 
       {/* FAQ Section */}
       <FAQSection />
