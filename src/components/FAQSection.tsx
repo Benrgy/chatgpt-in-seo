@@ -46,6 +46,26 @@ const faqs = [
     answer:
       "Start by identifying repetitive tasks in your SEO workflow that AI can handle, such as meta description writing or content outlining. Gradually integrate AI tools for specific use cases, train your team on best practices, and establish quality control processes. Monitor results and adjust your approach based on performance data. Our directory features tools for various stages of the SEO process.",
   },
+  {
+    question: "What is the best way to use ChatGPT for SEO in 2024?",
+    answer:
+      "In 2024, the best way to use ChatGPT for SEO is to combine it with specialized AI SEO tools. Use ChatGPT for content ideation, writing meta descriptions, creating content outlines, and generating FAQs. Pair it with dedicated SEO tools for keyword research data, backlink analysis, and technical audits. Always fact-check AI output and optimize for E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness).",
+  },
+  {
+    question: "How do AI SEO tools help with Google's AI Overview?",
+    answer:
+      "AI SEO tools help optimize content for Google's AI Overview (SGE) by creating comprehensive, well-structured content that directly answers user questions. Focus on clear headings, bullet points, FAQ sections, and authoritative sources. AI tools can analyze what content appears in AI Overviews and help you structure your content similarly to increase visibility in AI-generated search results.",
+  },
+  {
+    question: "What are the costs of AI SEO tools?",
+    answer:
+      "AI SEO tool costs vary widely from free tiers to enterprise plans. ChatGPT offers a free version and Plus subscription ($20/month). Dedicated AI SEO tools in our directory range from one-time purchases to monthly subscriptions. Many offer free trials so you can test before committing. Consider the ROI: time saved on content creation and improved rankings often justify the investment.",
+  },
+  {
+    question: "How do I choose the right AI SEO tool for my needs?",
+    answer:
+      "Choose AI SEO tools based on your specific needs: for content creation, look at ChatGPT-based tools; for video marketing, explore our AI video tools section; for automation, check our marketing automation category. Consider your budget, team size, and current workflow. Start with one tool, master it, then expand. Our curated directory helps you compare options across different categories.",
+  },
 ];
 
 export const FAQSection = () => {

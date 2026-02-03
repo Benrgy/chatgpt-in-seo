@@ -36,18 +36,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Schema.org structured data -->
+    <!-- Schema.org structured data - WebSite -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "ChatGPT in SEO",
+      "alternateName": ["ChatGPT SEO Tools", "AI SEO Directory"],
       "url": "https://chatgptinseo.com",
       "description": "ChatGPTInSEO.com is a curated directory of AI-powered SEO tools, resources, and educational content designed to help marketers, content creators, and SEO professionals optimize online performance and drive results.",
+      "inLanguage": ["en", "nl"],
       "publisher": {
         "@type": "Organization",
         "name": "ChatGPT in SEO",
         "email": "bgkingdombizz2009@gmail.com"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://chatgptinseo.com/#directory?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
     </script>
@@ -62,10 +69,112 @@
       "logo": "https://chatgptinseo.com/favicon.svg",
       "description": "Curated directory of AI-powered SEO tools and educational resources for marketers, content creators, and SEO professionals",
       "foundingDate": "2024",
+      "areaServed": "Worldwide",
+      "serviceType": ["SEO Tools Directory", "AI Marketing Resources", "ChatGPT SEO Training"],
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "bgkingdombizz2009@gmail.com",
-        "contactType": "Customer Service"
+        "contactType": "Customer Service",
+        "availableLanguage": ["English", "Dutch"]
+      },
+      "sameAs": []
+    }
+    </script>
+
+    <!-- ItemList Schema for Tools Directory -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best AI SEO Tools 2024",
+      "description": "Curated list of the best AI-powered SEO tools for keyword research, content optimization, and marketing automation",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "ChatGPT SEO Toolkit for Marketers",
+            "description": "Master ChatGPT in SEO. Learn, apply & rank fast. See how ChatGPT will truly affect your SEO results",
+            "applicationCategory": "SEO Tools",
+            "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "ratingCount": "1000"}
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "AI Video Creation & Editing Tools Hub",
+            "description": "Explore AI video tools for smart editing. Automate production, save time, and elevate your content.",
+            "applicationCategory": "Video Tools"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Boost ROI with Smart Automation",
+            "description": "Discover AI tools that automate marketing tasks, double ROI, and cut ad costs effortlessly.",
+            "applicationCategory": "Marketing Automation"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema for AI SEO Implementation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use ChatGPT for SEO",
+      "description": "Step-by-step guide to implementing AI-powered SEO strategies using ChatGPT and other AI tools",
+      "totalTime": "PT30M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Automated Keyword Research",
+          "text": "Use AI to discover high-value keywords by analyzing search patterns, competitor strategies, and semantic relationships."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "AI-Powered Content Optimization",
+          "text": "Optimize existing content by analyzing top-ranking pages and implementing AI-suggested improvements."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Predictive Analytics",
+          "text": "Leverage AI to predict content performance and identify trending topics before they peak."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Automated Meta Tag Generation",
+          "text": "Generate SEO-optimized title tags and meta descriptions at scale while maintaining brand voice."
+        }
+      ]
+    }
+    </script>
+
+    <!-- Speakable Schema for Voice Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "ChatGPT SEO Tools Directory",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "#about p", ".hero-description"]
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "AI SEO Tools"
       }
     }
     </script>
