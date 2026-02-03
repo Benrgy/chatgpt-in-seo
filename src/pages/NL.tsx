@@ -3,66 +3,66 @@ import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ToolCard } from "@/components/ToolCard";
-import { FAQSection } from "@/components/FAQSection";
-import { EducationalSection } from "@/components/EducationalSection";
+import { FAQSectionNL } from "@/components/FAQSectionNL";
+import { EducationalSectionNL } from "@/components/EducationalSectionNL";
 import heroImage from "@/assets/hero-seo-ai.jpg";
 import { Link } from "react-router-dom";
 
 const tools = [
   {
-    title: "ChatGPT SEO Toolkit for Marketers",
+    title: "ChatGPT SEO Toolkit voor Marketeers",
     description:
-      "Master ChatGPT in SEO. Learn, apply & rank fast. See how ChatGPT will truly affect your SEO results",
+      "Beheers ChatGPT voor SEO. Leer, pas toe & rank snel. Ontdek hoe ChatGPT jouw SEO-resultaten écht beïnvloedt.",
     category: "SEO Tools",
     categoryColor: "primary",
-    ctaText: "Try Toolkit",
+    ctaText: "Probeer Toolkit",
     ctaLink: "https://f8ccf5qat3ax2l151jl9445v0h.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
   },
   {
-    title: "AI Video Creation & Editing Tools Hub",
+    title: "AI Video Creatie & Bewerking Tools",
     description:
-      "Explore AI video tools for smart editing. Automate production, save time, and elevate your content.",
+      "Ontdek AI-videotools voor slimme bewerking. Automatiseer productie, bespaar tijd en til je content naar een hoger niveau.",
     category: "Video Tools",
     categoryColor: "secondary",
-    ctaText: "Explore Video Tools",
+    ctaText: "Bekijk Video Tools",
     ctaLink: "https://a42b49kcsdbw6s14uru2cs6zbw.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
   },
   {
-    title: "Boost ROI with Smart Automation",
+    title: "Verhoog ROI met Slimme Automatisering",
     description:
-      "Discover AI tools that automate marketing tasks, double ROI, and cut ad costs effortlessly.",
-    category: "Automation",
+      "Ontdek AI-tools die marketingtaken automatiseren, ROI verdubbelen en advertentiekosten moeiteloos verlagen.",
+    category: "Automatisering",
     categoryColor: "accent",
-    ctaText: "Automate Marketing",
+    ctaText: "Automatiseer Marketing",
     ctaLink: "https://25a5cxnmya8y7r9mu9xpv65zfc.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
   },
   {
-    title: "AI Video Creation Tools Directory",
+    title: "AI Video Creatie Tools Directory",
     description:
-      "Discover top AI tools for video creation. Enhance content, save time, boost engagement effortlessly.",
-    category: "Video Creation",
+      "Ontdek top AI-tools voor videocreatie. Verbeter content, bespaar tijd en verhoog engagement moeiteloos.",
+    category: "Video Creatie",
     categoryColor: "primary",
     ctaText: "Top Video Tools",
     ctaLink: "https://3f1da1rk327l9x9b3f1x2r5z6r.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 4,
   },
   {
-    title: "AI Blog Monetisation System",
+    title: "AI Blog Monetisatie Systeem",
     description:
-      "Turn blogs into passive income machines with AI. Boost traffic, automate profits, start today.",
-    category: "Monetization",
+      "Maak van blogs passieve inkomstenmachines met AI. Verhoog verkeer, automatiseer winst, start vandaag.",
+    category: "Monetisatie",
     categoryColor: "secondary",
-    ctaText: "Monetise Blog",
+    ctaText: "Monetiseer Blog",
     ctaLink: "https://ba4d0zukz36k2wagyd-24s3tcw.hop.clickbank.net/?&traffic_source=lovable&traffic_type=directory",
     rating: 5,
   },
   {
-    title: "AI Marketing Mastery",
+    title: "AI Marketing Meesterschap",
     description:
-      "Discover AI tools that automate marketing tasks, double ROI, and cut ad costs effortlessly.",
+      "Ontdek AI-tools die marketingtaken automatiseren, ROI verdubbelen en advertentiekosten moeiteloos verlagen.",
     category: "Marketing",
     categoryColor: "accent",
     ctaText: "AI Marketing",
@@ -71,7 +71,7 @@ const tools = [
   },
 ];
 
-const Index = () => {
+const NL = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [email, setEmail] = useState("");
 
@@ -94,7 +94,7 @@ const Index = () => {
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Newsletter subscription:", email);
+    console.log("Nieuwsbrief inschrijving:", email);
     setEmail("");
   };
 
@@ -104,7 +104,7 @@ const Index = () => {
       <header className="fixed w-full bg-background/95 backdrop-blur-sm z-50 shadow-sm border-b">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
           <a
-            href="https://chatgptinseo.com/"
+            href="/nl"
             className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
           >
             ChatGpt In Seo
@@ -126,7 +126,7 @@ const Index = () => {
               href="#about"
               className="hover:text-primary transition-colors duration-300"
             >
-              About Us
+              Over Ons
             </a>
             <a
               href="#contact"
@@ -135,11 +135,11 @@ const Index = () => {
               Contact
             </a>
             <Link
-              to="/nl"
+              to="/"
               className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Globe className="w-4 h-4" />
-              NL
+              EN
             </Link>
           </div>
           <button
@@ -175,7 +175,7 @@ const Index = () => {
               className="block px-6 py-4 hover:bg-muted"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About Us
+              Over Ons
             </a>
             <a
               href="#contact"
@@ -185,11 +185,11 @@ const Index = () => {
               Contact
             </a>
             <Link
-              to="/nl"
+              to="/"
               className="block px-6 py-4 hover:bg-muted"
               onClick={() => setMobileMenuOpen(false)}
             >
-              🇳🇱 Nederlands
+              🌐 English
             </Link>
           </div>
         )}
@@ -199,16 +199,17 @@ const Index = () => {
       <section
         id="hero"
         className="min-h-[60vh] flex items-center justify-center relative pt-20"
-        aria-label="Hero section showcasing AI-powered SEO tools"
+        aria-label="Hero sectie met AI-gedreven SEO tools"
         itemScope
         itemType="https://schema.org/WebPage"
       >
-        <meta itemProp="name" content="ChatGPT SEO Tools Directory - AI-Powered SEO Solutions" />
-        <meta itemProp="description" content="Discover the best AI SEO tools including ChatGPT for keyword research, content optimization, and marketing automation. Curated directory for SEO professionals." />
+        <meta itemProp="name" content="ChatGPT SEO Tools Directory - AI-Gedreven SEO Oplossingen" />
+        <meta itemProp="description" content="Ontdek de beste AI SEO tools inclusief ChatGPT voor zoekwoordonderzoek, content optimalisatie en marketing automatisering." />
+        <meta itemProp="inLanguage" content="nl" />
         <div className="absolute inset-0">
           <img 
             src={heroImage}
-            alt="Modern office workspace featuring AI-powered SEO tools dashboard with ChatGPT integration for search engine optimization and digital marketing professionals"
+            alt="Moderne kantoorwerkplek met AI-gedreven SEO tools dashboard en ChatGPT integratie voor zoekmachine optimalisatie"
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
@@ -218,16 +219,16 @@ const Index = () => {
         </div>
         <div className="container mx-auto px-6 text-center relative z-10 py-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white" itemProp="headline">
-            ChatGPT in SEO: Smart AI Tools for Fast Google Ranking
+            ChatGPT voor SEO: Slimme AI Tools voor Snelle Google Rankings
           </h1>
           <p className="text-xl md:text-2xl text-white/95 mb-4 max-w-3xl mx-auto hero-description">
-            AI-Powered SEO Tool Directory for Marketers & Content Creators
+            AI-Gedreven SEO Tool Directory voor Marketeers & Content Creators
           </p>
           <p className="text-lg text-white/90 mb-8 max-w-4xl mx-auto" itemProp="about">
-            ChatGPTInSEO.com is a curated directory of AI-powered SEO tools,
-            resources, and educational content. We help marketers, content creators, 
-            and SEO professionals optimize their online performance with ChatGPT, 
-            AI keyword research, automated content optimization, and smart marketing automation.
+            ChatGPTInSEO.com is een gecureerde directory van AI-gedreven SEO tools,
+            bronnen en educatieve content. Wij helpen marketeers, content creators 
+            en SEO-professionals hun online prestaties te optimaliseren met ChatGPT, 
+            AI-zoekwoordonderzoek, geautomatiseerde content optimalisatie en slimme marketing automatisering.
           </p>
           <Button
             asChild
@@ -240,7 +241,7 @@ const Index = () => {
               rel="noopener noreferrer"
               itemProp="url"
             >
-              Try Our #1 SEO AI Tool
+              Probeer Onze #1 SEO AI Tool
             </a>
           </Button>
         </div>
@@ -248,28 +249,28 @@ const Index = () => {
 
       {/* Breadcrumbs */}
       <div className="container mx-auto px-6">
-        <Breadcrumbs items={[{ label: "Tools Directory" }]} />
+        <Breadcrumbs items={[{ label: "Nederlands" }, { label: "Tools Directory" }]} />
       </div>
 
       {/* Trust Bar */}
-      <section className="py-12 bg-muted/50" aria-label="Trust and statistics">
+      <section className="py-12 bg-muted/50" aria-label="Vertrouwen en statistieken">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center items-center gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary" aria-label="Over one thousand users">1000+</div>
-              <div className="text-muted-foreground">Happy Users</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Meer dan duizend gebruikers">1000+</div>
+              <div className="text-muted-foreground">Tevreden Gebruikers</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary" aria-label="Six premium tools">6</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Zes premium tools">6</div>
               <div className="text-muted-foreground">Premium Tools</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary" aria-label="Twenty-four seven support">24/7</div>
-              <div className="text-muted-foreground">Support Available</div>
+              <div className="text-3xl font-bold text-primary" aria-label="24 uur per dag 7 dagen per week support">24/7</div>
+              <div className="text-muted-foreground">Support Beschikbaar</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary" aria-label="Founded in 2024">Founded 2024</div>
-              <div className="text-muted-foreground">Trusted Directory</div>
+              <div className="text-3xl font-bold text-primary" aria-label="Opgericht in 2024">Sinds 2024</div>
+              <div className="text-muted-foreground">Vertrouwde Directory</div>
             </div>
           </div>
         </div>
@@ -277,77 +278,73 @@ const Index = () => {
 
       {/* Problem/Solution Section */}
       <section className="py-20 bg-background" itemScope itemType="https://schema.org/Article">
-        <meta itemProp="headline" content="How AI Solves Modern SEO Challenges" />
+        <meta itemProp="headline" content="Hoe AI Moderne SEO Uitdagingen Oplost" />
         <meta itemProp="author" content="ChatGPT in SEO" />
+        <meta itemProp="inLanguage" content="nl" />
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              The Challenges of Modern SEO in 2026
+              De Uitdagingen van Moderne SEO in 2026
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-16" itemProp="articleBody">
               <article>
                 <h3 className="text-xl font-semibold mb-3">
-                  Staying Ahead of Google Algorithm Updates
+                  Voorop Blijven bij Google Updates
                 </h3>
                 <p className="text-muted-foreground">
-                  Search engine algorithms evolve constantly, making it
-                  challenging to maintain rankings without continuous
-                  optimization and monitoring. AI tools help you adapt faster.
+                  Zoekmachine algoritmes evolueren constant, wat het uitdagend maakt om rankings
+                  te behouden zonder continue optimalisatie. AI tools helpen je sneller aanpassen.
                 </p>
               </article>
               <article>
                 <h3 className="text-xl font-semibold mb-3">
-                  Analyzing Massive SEO Datasets
+                  Enorme SEO Datasets Analyseren
                 </h3>
                 <p className="text-muted-foreground">
-                  Traditional SEO tools struggle to process and analyze the vast
-                  amounts of data needed for competitive keyword research and
-                  content optimization. ChatGPT and AI solve this.
+                  Traditionele SEO tools worstelen met het verwerken van grote hoeveelheden data
+                  voor competitief zoekwoordonderzoek. ChatGPT en AI lossen dit op.
                 </p>
               </article>
               <article>
                 <h3 className="text-xl font-semibold mb-3">
-                  Creating SEO Content at Scale
+                  SEO Content op Schaal Creëren
                 </h3>
                 <p className="text-muted-foreground">
-                  Producing high-quality, SEO-optimized content consistently
-                  requires significant time and resources. AI content tools
-                  accelerate production while maintaining quality.
+                  Consistent hoogwaardige, SEO-geoptimaliseerde content produceren vereist veel tijd.
+                  AI content tools versnellen productie met behoud van kwaliteit.
                 </p>
               </article>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              How ChatGPT and AI Solve SEO Problems
+              Hoe ChatGPT en AI SEO Problemen Oplossen
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <article itemScope itemType="https://schema.org/HowToStep">
                 <h3 className="text-xl font-semibold mb-3 text-primary" itemProp="name">
-                  Automated Keyword Research with AI
+                  Geautomatiseerd Zoekwoordonderzoek met AI
                 </h3>
                 <p className="text-muted-foreground" itemProp="text">
-                  AI analyzes search patterns and competitor strategies in
-                  seconds, uncovering high-value keywords and long-tail
-                  opportunities automatically. ChatGPT helps generate keyword ideas instantly.
+                  AI analyseert zoekpatronen en concurrentiestrategieën in seconden, en ontdekt
+                  automatisch waardevolle zoekwoorden. ChatGPT genereert direct zoekwoordideeën.
                 </p>
               </article>
               <article itemScope itemType="https://schema.org/HowToStep">
                 <h3 className="text-xl font-semibold mb-3 text-primary" itemProp="name">
-                  AI-Powered Content Optimization
+                  AI-Gedreven Content Optimalisatie
                 </h3>
                 <p className="text-muted-foreground" itemProp="text">
-                  Leverage machine learning to optimize content structure,
-                  keyword density, and readability based on top-ranking pages in
-                  your niche. Improve your Google rankings with AI insights.
+                  Gebruik machine learning om contentstructuur, zoekwoorddichtheid en leesbaarheid
+                  te optimaliseren. Verbeter je Google rankings met AI-inzichten.
                 </p>
               </article>
               <article itemScope itemType="https://schema.org/HowToStep">
                 <h3 className="text-xl font-semibold mb-3 text-primary" itemProp="name">
-                  Predictive SEO Analytics
+                  Voorspellende SEO Analytics
                 </h3>
                 <p className="text-muted-foreground" itemProp="text">
-                  AI predicts content performance and identifies trending topics
-                  before they peak, giving you a competitive advantage in search rankings.
+                  AI voorspelt contentprestaties en identificeert trending onderwerpen voordat
+                  ze pieken, wat je een concurrentievoordeel geeft in zoekresultaten.
                 </p>
               </article>
             </div>
@@ -360,11 +357,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Curated AI SEO Tool Selection
+              Gecureerde AI SEO Tool Selectie
             </h2>
             <p className="text-muted-foreground text-lg">
-              Discover a hand-picked selection of the most effective AI tools for
-              SEO, saving you time and effort
+              Ontdek een handgeselecteerde verzameling van de meest effectieve AI tools voor
+              SEO, waarmee je tijd en moeite bespaart
             </p>
           </div>
           <div
@@ -389,20 +386,20 @@ const Index = () => {
       </section>
 
       {/* Educational Section */}
-      <EducationalSection />
+      <EducationalSectionNL />
 
       {/* FAQ Section */}
-      <FAQSection />
+      <FAQSectionNL />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Ready to Explore Our AI SEO Tools?
+            Klaar om Onze AI SEO Tools te Verkennen?
           </h2>
           <p className="text-xl mb-8 text-white/95 max-w-2xl mx-auto">
-            Join thousands of marketers, content creators, and SEO professionals
-            leveraging AI to optimize their online performance
+            Sluit je aan bij duizenden marketeers, content creators en SEO-professionals
+            die AI inzetten om hun online prestaties te optimaliseren
           </p>
           <Button
             asChild
@@ -414,7 +411,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Get Started Now
+              Start Nu
             </a>
           </Button>
         </div>
@@ -424,19 +421,18 @@ const Index = () => {
       <section id="about" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">About Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Over Ons</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Welcome to the premier destination for AI-powered SEO tools and
-              resources. Our carefully curated directory connects marketers,
-              content creators, and SEOs with the best solutions to optimize
-              online performance and drive results.
+              Welkom bij dé bestemming voor AI-gedreven SEO tools en bronnen. Onze
+              zorgvuldig samengestelde directory verbindt marketeers, content creators
+              en SEO-professionals met de beste oplossingen om online prestaties te
+              optimaliseren en resultaten te behalen.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              We understand the challenges of modern SEO and believe that
-              AI-powered tools are essential for staying competitive. Our mission
-              is to help you discover, learn, and implement the most effective AI
-              solutions for your specific needs, whether you're optimizing
-              content, automating workflows, or scaling your marketing efforts.
+              Wij begrijpen de uitdagingen van moderne SEO en geloven dat AI-gedreven
+              tools essentieel zijn om competitief te blijven. Onze missie is je te helpen
+              de meest effectieve AI-oplossingen te ontdekken, leren en implementeren
+              voor jouw specifieke behoeften.
             </p>
           </div>
         </div>
@@ -447,9 +443,9 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+              <h3 className="text-xl font-bold mb-4">Contact</h3>
               <p className="text-gray-400">
-                Email:{" "}
+                E-mail:{" "}
                 <a
                   href="mailto:bgkingdombizz2009@gmail.com"
                   className="hover:text-white transition-colors"
@@ -459,14 +455,14 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-4">Snelle Links</h3>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="https://chatgptinseo.com/privacy.html"
                     className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
-                    Privacy Policy
+                    Privacybeleid
                   </a>
                 </li>
                 <li>
@@ -474,7 +470,7 @@ const Index = () => {
                     href="https://chatgptinseo.com/terms.html"
                     className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
-                    Terms of Service
+                    Algemene Voorwaarden
                   </a>
                 </li>
                 <li>
@@ -488,67 +484,47 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                  aria-label="Twitter"
-                >
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
+              <h3 className="text-xl font-bold mb-4">Talen</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link
+                    to="/"
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                  aria-label="LinkedIn"
-                >
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </a>
-              </div>
+                    🇬🇧 English
+                  </Link>
+                </li>
+                <li>
+                  <span className="text-white">
+                    🇳🇱 Nederlands (huidige)
+                  </span>
+                </li>
+              </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Newsletter</h3>
+              <h3 className="text-xl font-bold mb-4">Nieuwsbrief</h3>
               <p className="text-gray-400 mb-4">
-                Stay updated with our latest tools and features
+                Blijf op de hoogte van de nieuwste AI SEO trends
               </p>
-              <form onSubmit={handleNewsletterSubmit} className="flex" aria-label="Newsletter subscription form">
-                <label htmlFor="footer-newsletter-email" className="sr-only">Email address for newsletter</label>
+              <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                 <input
-                  id="footer-newsletter-email"
                   type="email"
-                  placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Je e-mail"
+                  className="px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 flex-1"
                   required
-                  aria-required="true"
-                  className="px-4 py-2 rounded-l-full w-full text-gray-900"
                 />
-                <Button
-                  type="submit"
-                  className="px-6 rounded-r-full bg-primary hover:bg-primary/90"
-                  aria-label="Subscribe to newsletter"
-                >
-                  Subscribe
+                <Button type="submit" size="sm">
+                  Aanmelden
                 </Button>
               </form>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>
-              &copy; 2026 ChatGpt In SEO | chatgpt seo tools Directory. All
-              rights reserved.
+              &copy; 2026 ChatGpt In SEO | chatgpt seo tools Directory. Alle
+              rechten voorbehouden.
             </p>
           </div>
         </div>
@@ -557,4 +533,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default NL;
