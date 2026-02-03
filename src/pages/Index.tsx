@@ -267,7 +267,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              The Challenges of Modern SEO in 2024
+              The Challenges of Modern SEO in 2026
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-16" itemProp="articleBody">
               <article>
@@ -532,7 +532,7 @@ const Index = () => {
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>
-              &copy; 2024 ChatGpt In SEO | chatgpt seo tools Directory. All
+              &copy; 2026 ChatGpt In SEO | chatgpt seo tools Directory. All
               rights reserved.
             </p>
           </div>
