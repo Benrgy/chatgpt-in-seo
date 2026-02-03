@@ -52,19 +52,39 @@ const faqs = [
       "In 2026, the best way to use ChatGPT for SEO is to combine it with specialized AI SEO tools. Use ChatGPT for content ideation, writing meta descriptions, creating content outlines, and generating FAQs. Pair it with dedicated SEO tools for keyword research data, backlink analysis, and technical audits. Always fact-check AI output and optimize for E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness).",
   },
   {
-    question: "How do AI SEO tools help with Google's AI Overview?",
+    question: "How do AI SEO tools help with Google's AI Overview in 2026?",
     answer:
-      "AI SEO tools help optimize content for Google's AI Overview (SGE) by creating comprehensive, well-structured content that directly answers user questions. Focus on clear headings, bullet points, FAQ sections, and authoritative sources. AI tools can analyze what content appears in AI Overviews and help you structure your content similarly to increase visibility in AI-generated search results.",
+      "In 2026, Google's AI Overview appears in 80% of informational searches. AI SEO tools help by analyzing AI Overview patterns, structuring content for featured inclusion, optimizing for conversational queries, and ensuring your content gets cited. Focus on comprehensive answers, clear structure, authoritative sources, and E-E-A-T signals. Tools can now predict which content formats AI Overview prefers for specific query types.",
   },
   {
-    question: "What are the costs of AI SEO tools?",
+    question: "What is LLM Citation SEO and why does it matter in 2026?",
     answer:
-      "AI SEO tool costs vary widely from free tiers to enterprise plans. ChatGPT offers a free version and Plus subscription ($20/month). Dedicated AI SEO tools in our directory range from one-time purchases to monthly subscriptions. Many offer free trials so you can test before committing. Consider the ROI: time saved on content creation and improved rankings often justify the investment.",
+      "LLM Citation SEO is the practice of optimizing content to be cited by AI assistants like ChatGPT, Claude, Perplexity, and Gemini. In 2026, millions of users search through these AI interfaces instead of Google. Getting your content cited by LLMs drives traffic, builds authority, and creates brand visibility. Focus on authoritative, well-structured content with clear facts, statistics, and expert insights that AI can reference.",
   },
   {
-    question: "How do I choose the right AI SEO tool for my needs?",
+    question: "How has voice search changed SEO in 2026?",
     answer:
-      "Choose AI SEO tools based on your specific needs: for content creation, look at ChatGPT-based tools; for video marketing, explore our AI video tools section; for automation, check our marketing automation category. Consider your budget, team size, and current workflow. Start with one tool, master it, then expand. Our curated directory helps you compare options across different categories.",
+      "Voice search through smart speakers, AI assistants, and mobile devices now accounts for 50% of searches in 2026. This requires optimizing for natural language queries, question-based keywords, and conversational content. AI tools help generate voice-optimized content by analyzing how people speak versus type their queries, creating FAQ-style content, and structuring answers for voice-first delivery.",
+  },
+  {
+    question: "What are AI SEO agents and how do they work?",
+    answer:
+      "AI SEO agents are autonomous AI systems that continuously monitor your website's SEO performance, identify issues, and implement fixes automatically. In 2026, these agents can update meta tags, suggest content improvements, fix technical SEO issues, and even predict algorithm changes. They work 24/7, allowing SEO teams to focus on strategy while routine optimization happens automatically.",
+  },
+  {
+    question: "How do I optimize for multimodal search in 2026?",
+    answer:
+      "Multimodal search combines text, image, video, and voice queries. In 2026, Google's AI understands content across all formats. Optimize by creating cohesive content strategies where your text, images (with proper alt tags), and videos all target the same topics. AI tools can generate optimized descriptions, suggest image improvements, and create video transcripts that improve overall search visibility.",
+  },
+  {
+    question: "What are the costs of AI SEO tools in 2026?",
+    answer:
+      "AI SEO tool pricing in 2026 ranges from free tiers to enterprise solutions. ChatGPT Plus is $20/month, Claude Pro is $20/month, and specialized AI SEO tools range from $50-500/month depending on features. Many tools now offer usage-based pricing. The ROI typically exceeds costs within 2-3 months through time savings and improved rankings. Our directory features tools across all price points.",
+  },
+  {
+    question: "How do I choose the right AI SEO tool for 2026?",
+    answer:
+      "Choose based on your primary needs: for AI Overview optimization, look at tools with SGE analysis features; for LLM citations, focus on authority-building tools; for content at scale, explore AI writing assistants; for technical SEO, choose tools with automated audit capabilities. Consider integration with your existing stack, team size, and whether you need AI agents for autonomous optimization. Start with one tool, master it, then expand.",
   },
 ];
 
