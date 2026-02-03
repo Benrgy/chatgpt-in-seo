@@ -185,7 +185,11 @@ const Index = () => {
         id="hero"
         className="min-h-[60vh] flex items-center justify-center relative pt-20"
         aria-label="Hero section showcasing AI-powered SEO tools"
+        itemScope
+        itemType="https://schema.org/WebPage"
       >
+        <meta itemProp="name" content="ChatGPT SEO Tools Directory - AI-Powered SEO Solutions" />
+        <meta itemProp="description" content="Discover the best AI SEO tools including ChatGPT for keyword research, content optimization, and marketing automation. Curated directory for SEO professionals." />
         <div className="absolute inset-0">
           <img 
             src={heroImage}
@@ -193,21 +197,22 @@ const Index = () => {
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
+            itemProp="image"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"></div>
         </div>
         <div className="container mx-auto px-6 text-center relative z-10 py-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            ChatGpt in SEO: Smart Chatgpt Seo Tools for Fast Ranking
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white" itemProp="headline">
+            ChatGPT in SEO: Smart AI Tools for Fast Google Ranking
           </h1>
-          <p className="text-xl md:text-2xl text-white/95 mb-4 max-w-3xl mx-auto">
-            AI-Powered SEO Tool Directory
+          <p className="text-xl md:text-2xl text-white/95 mb-4 max-w-3xl mx-auto hero-description">
+            AI-Powered SEO Tool Directory for Marketers & Content Creators
           </p>
-          <p className="text-lg text-white/90 mb-8 max-w-4xl mx-auto">
+          <p className="text-lg text-white/90 mb-8 max-w-4xl mx-auto" itemProp="about">
             ChatGPTInSEO.com is a curated directory of AI-powered SEO tools,
-            resources, and educational content designed to help marketers,
-            content creators, and SEO professionals optimize online performance
-            and drive results.
+            resources, and educational content. We help marketers, content creators, 
+            and SEO professionals optimize their online performance with ChatGPT, 
+            AI keyword research, automated content optimization, and smart marketing automation.
           </p>
           <Button
             asChild
@@ -218,6 +223,7 @@ const Index = () => {
               href="https://1b4a78qiy57n5sa9ptk8zuaw6j.hop.clickbank.net"
               target="_blank"
               rel="noopener noreferrer"
+              itemProp="url"
             >
               Try Our #1 SEO AI Tool
             </a>
@@ -255,78 +261,80 @@ const Index = () => {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background" itemScope itemType="https://schema.org/Article">
+        <meta itemProp="headline" content="How AI Solves Modern SEO Challenges" />
+        <meta itemProp="author" content="ChatGPT in SEO" />
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              The Challenges of Modern SEO
+              The Challenges of Modern SEO in 2024
             </h2>
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div>
+            <div className="grid md:grid-cols-3 gap-8 mb-16" itemProp="articleBody">
+              <article>
                 <h3 className="text-xl font-semibold mb-3">
-                  Staying Ahead of Algorithm Updates
+                  Staying Ahead of Google Algorithm Updates
                 </h3>
                 <p className="text-muted-foreground">
                   Search engine algorithms evolve constantly, making it
                   challenging to maintain rankings without continuous
-                  optimization and monitoring.
+                  optimization and monitoring. AI tools help you adapt faster.
                 </p>
-              </div>
-              <div>
+              </article>
+              <article>
                 <h3 className="text-xl font-semibold mb-3">
-                  Analyzing Massive Datasets
+                  Analyzing Massive SEO Datasets
                 </h3>
                 <p className="text-muted-foreground">
                   Traditional SEO tools struggle to process and analyze the vast
                   amounts of data needed for competitive keyword research and
-                  content optimization.
+                  content optimization. ChatGPT and AI solve this.
                 </p>
-              </div>
-              <div>
+              </article>
+              <article>
                 <h3 className="text-xl font-semibold mb-3">
-                  Creating Engaging Content at Scale
+                  Creating SEO Content at Scale
                 </h3>
                 <p className="text-muted-foreground">
                   Producing high-quality, SEO-optimized content consistently
-                  requires significant time and resources that most teams don't
-                  have.
+                  requires significant time and resources. AI content tools
+                  accelerate production while maintaining quality.
                 </p>
-              </div>
+              </article>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              How AI Solves These Problems
+              How ChatGPT and AI Solve SEO Problems
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-3 text-primary">
-                  Automated Keyword Research
+              <article itemScope itemType="https://schema.org/HowToStep">
+                <h3 className="text-xl font-semibold mb-3 text-primary" itemProp="name">
+                  Automated Keyword Research with AI
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground" itemProp="text">
                   AI analyzes search patterns and competitor strategies in
                   seconds, uncovering high-value keywords and long-tail
-                  opportunities automatically.
+                  opportunities automatically. ChatGPT helps generate keyword ideas instantly.
                 </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-3 text-primary">
+              </article>
+              <article itemScope itemType="https://schema.org/HowToStep">
+                <h3 className="text-xl font-semibold mb-3 text-primary" itemProp="name">
                   AI-Powered Content Optimization
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground" itemProp="text">
                   Leverage machine learning to optimize content structure,
                   keyword density, and readability based on top-ranking pages in
-                  your niche.
+                  your niche. Improve your Google rankings with AI insights.
                 </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-3 text-primary">
-                  Predictive Analytics for SEO
+              </article>
+              <article itemScope itemType="https://schema.org/HowToStep">
+                <h3 className="text-xl font-semibold mb-3 text-primary" itemProp="name">
+                  Predictive SEO Analytics
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground" itemProp="text">
                   AI predicts content performance and identifies trending topics
-                  before they peak, giving you a competitive advantage.
+                  before they peak, giving you a competitive advantage in search rankings.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </div>
